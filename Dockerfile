@@ -21,4 +21,4 @@ ENV DD_INTEGRATIONS=/opt/datadog/integrations.json
 
 ENV PORT=80 FORCE_HTTPS=1
 EXPOSE 80
-CMD ASPNETCORE_URLS="http://*:$PORT" dotnet TodoWebApi.dll
+CMD ASPNETCORE_URLS="http://*:${PORT}" dotnet TodoWebApi.dll
