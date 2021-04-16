@@ -11,8 +11,8 @@ COPY --from=0 /build/src/out ./
 RUN apt-get update && apt-get install -y bash curl
 
 RUN mkdir -p /opt/datadog
-RUN curl -LO https://github.com/DataDog/dd-trace-dotnet/releases/download/v1.13.0/datadog-dotnet-apm_1.13.0_amd64.deb
-RUN apt install ./datadog-dotnet-apm_1.13.0_amd64.deb
+RUN curl -LO https://github.com/DataDog/dd-trace-dotnet/releases/download/v1.25.0/datadog-dotnet-apm_1.25.0_amd64.deb
+RUN apt install ./datadog-dotnet-apm_1.25.0_amd64.deb
 
 ENV CORECLR_ENABLE_PROFILING=1
 ENV CORECLR_PROFILER={846F5F1C-F9AE-4B07-969E-05C26BC060D8}
